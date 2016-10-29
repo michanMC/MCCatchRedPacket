@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C7AF80D1DC4898300AFA261 /* btn_close_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7AF80C1DC4898300AFA261 /* btn_close_normal@2x.png */; };
+		4CAC59391DC47AA800CAA825 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC59381DC47AA800CAA825 /* main.m */; };
+		4CAC593C1DC47AA800CAA825 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC593B1DC47AA800CAA825 /* AppDelegate.m */; };
+		4CAC593F1DC47AA800CAA825 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC593E1DC47AA800CAA825 /* ViewController.m */; };
+		4CAC59441DC47AA800CAA825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC59431DC47AA800CAA825 /* Assets.xcassets */; };
+		4CAC59521DC47AA800CAA825 /* MCCatchRedPacketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC59511DC47AA800CAA825 /* MCCatchRedPacketTests.m */; };
+		4CAC595D1DC47AA800CAA825 /* MCCatchRedPacketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC595C1DC47AA800CAA825 /* MCCatchRedPacketUITests.m */; };
+		4CAC596F1DC47B9D00CAA825 /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC596C1DC47B9D00CAA825 /* YLGIFImage.m */; };
+		4CAC59701DC47B9D00CAA825 /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC596E1DC47B9D00CAA825 /* YLImageView.m */; };
+		4CAC59731DC47BD400CAA825 /* MCCatchRedPacketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC59721DC47BD400CAA825 /* MCCatchRedPacketController.m */; };
+		4CAC59771DC47CE100CAA825 /* YGGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC59761DC47CE100CAA825 /* YGGravity.m */; };
+		4CAC597A1DC47CFD00CAA825 /* MCCatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC59791DC47CFD00CAA825 /* MCCatchView.m */; };
+		4CAC597D1DC47D4700CAA825 /* RedPacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC597C1DC47D4700CAA825 /* RedPacketView.m */; };
+		4CAC59841DC47F9B00CAA825 /* btn_catch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC597F1DC47F9B00CAA825 /* btn_catch.png */; };
+		4CAC59851DC47F9B00CAA825 /* btn_catch_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC59801DC47F9B00CAA825 /* btn_catch_normal.png */; };
+		4CAC59861DC47F9B00CAA825 /* ic_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC59811DC47F9B00CAA825 /* ic_arrow.png */; };
+		4CAC59871DC47F9B00CAA825 /* ic_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC59821DC47F9B00CAA825 /* ic_circle.png */; };
+		4CAC59881DC47F9B00CAA825 /* ic_circle_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC59831DC47F9B00CAA825 /* ic_circle_normal.png */; };
+		4CAC598A1DC47FB200CAA825 /* bird.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC59891DC47FB200CAA825 /* bird.gif */; };
+		4CAC598D1DC4823C00CAA825 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC598C1DC4823C00CAA825 /* QuartzCore.framework */; };
+		4CAC598F1DC4824200CAA825 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC598E1DC4824200CAA825 /* AVFoundation.framework */; };
+		4CAC59911DC4824800CAA825 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC59901DC4824800CAA825 /* MobileCoreServices.framework */; };
+		4CAC59931DC4825400CAA825 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC59921DC4825400CAA825 /* MediaPlayer.framework */; };
+		4CAC59951DC4825A00CAA825 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC59941DC4825A00CAA825 /* AssetsLibrary.framework */; };
+		4CAC59971DC4826700CAA825 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC59961DC4826700CAA825 /* CoreMedia.framework */; };
+		4CAC59991DC4826F00CAA825 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC59981DC4826F00CAA825 /* CoreMotion.framework */; };
+		4CAC599B1DC4834200CAA825 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC599A1DC4834200CAA825 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CAC594E1DC47AA800CAA825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CAC592C1DC47AA800CAA825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAC59331DC47AA800CAA825;
+			remoteInfo = MCCatchRedPacket;
+		};
+		4CAC59591DC47AA800CAA825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CAC592C1DC47AA800CAA825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAC59331DC47AA800CAA825;
+			remoteInfo = MCCatchRedPacket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C7AF80C1DC4898300AFA261 /* btn_close_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_normal@2x.png"; sourceTree = "<group>"; };
+		4CAC59341DC47AA800CAA825 /* MCCatchRedPacket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCCatchRedPacket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAC59381DC47AA800CAA825 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CAC593A1DC47AA800CAA825 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CAC593B1DC47AA800CAA825 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CAC593D1DC47AA800CAA825 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CAC593E1DC47AA800CAA825 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CAC59431DC47AA800CAA825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CAC59481DC47AA800CAA825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAC594D1DC47AA800CAA825 /* MCCatchRedPacketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCCatchRedPacketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAC59511DC47AA800CAA825 /* MCCatchRedPacketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCCatchRedPacketTests.m; sourceTree = "<group>"; };
+		4CAC59531DC47AA800CAA825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAC59581DC47AA800CAA825 /* MCCatchRedPacketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCCatchRedPacketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAC595C1DC47AA800CAA825 /* MCCatchRedPacketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCCatchRedPacketUITests.m; sourceTree = "<group>"; };
+		4CAC595E1DC47AA800CAA825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAC596B1DC47B9D00CAA825 /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		4CAC596C1DC47B9D00CAA825 /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		4CAC596D1DC47B9D00CAA825 /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		4CAC596E1DC47B9D00CAA825 /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		4CAC59711DC47BD400CAA825 /* MCCatchRedPacketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCatchRedPacketController.h; sourceTree = "<group>"; };
+		4CAC59721DC47BD400CAA825 /* MCCatchRedPacketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCatchRedPacketController.m; sourceTree = "<group>"; };
+		4CAC59751DC47CE100CAA825 /* YGGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGGravity.h; sourceTree = "<group>"; };
+		4CAC59761DC47CE100CAA825 /* YGGravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGGravity.m; sourceTree = "<group>"; };
+		4CAC59781DC47CFD00CAA825 /* MCCatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCatchView.h; sourceTree = "<group>"; };
+		4CAC59791DC47CFD00CAA825 /* MCCatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCatchView.m; sourceTree = "<group>"; };
+		4CAC597B1DC47D4700CAA825 /* RedPacketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketView.h; sourceTree = "<group>"; };
+		4CAC597C1DC47D4700CAA825 /* RedPacketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketView.m; sourceTree = "<group>"; };
+		4CAC597F1DC47F9B00CAA825 /* btn_catch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_catch.png; sourceTree = "<group>"; };
+		4CAC59801DC47F9B00CAA825 /* btn_catch_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_catch_normal.png; sourceTree = "<group>"; };
+		4CAC59811DC47F9B00CAA825 /* ic_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_arrow.png; sourceTree = "<group>"; };
+		4CAC59821DC47F9B00CAA825 /* ic_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_circle.png; sourceTree = "<group>"; };
+		4CAC59831DC47F9B00CAA825 /* ic_circle_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_circle_normal.png; sourceTree = "<group>"; };
+		4CAC59891DC47FB200CAA825 /* bird.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bird.gif; sourceTree = "<group>"; };
+		4CAC598C1DC4823C00CAA825 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4CAC598E1DC4824200CAA825 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4CAC59901DC4824800CAA825 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4CAC59921DC4825400CAA825 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4CAC59941DC4825A00CAA825 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4CAC59961DC4826700CAA825 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4CAC59981DC4826F00CAA825 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4CAC599A1DC4834200CAA825 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CAC59311DC47AA800CAA825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAC59991DC4826F00CAA825 /* CoreMotion.framework in Frameworks */,
+				4CAC59971DC4826700CAA825 /* CoreMedia.framework in Frameworks */,
+				4CAC59951DC4825A00CAA825 /* AssetsLibrary.framework in Frameworks */,
+				4CAC59931DC4825400CAA825 /* MediaPlayer.framework in Frameworks */,
+				4CAC59911DC4824800CAA825 /* MobileCoreServices.framework in Frameworks */,
+				4CAC598F1DC4824200CAA825 /* AVFoundation.framework in Frameworks */,
+				4CAC598D1DC4823C00CAA825 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAC594A1DC47AA800CAA825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAC59551DC47AA800CAA825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CAC592B1DC47AA800CAA825 = {
+			isa = PBXGroup;
+			children = (
+				4CAC599A1DC4834200CAA825 /* Default-568h@2x.png */,
+				4CAC59361DC47AA800CAA825 /* MCCatchRedPacket */,
+				4CAC59501DC47AA800CAA825 /* MCCatchRedPacketTests */,
+				4CAC595B1DC47AA800CAA825 /* MCCatchRedPacketUITests */,
+				4CAC59351DC47AA800CAA825 /* Products */,
+				4CAC598B1DC4823C00CAA825 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4CAC59351DC47AA800CAA825 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC59341DC47AA800CAA825 /* MCCatchRedPacket.app */,
+				4CAC594D1DC47AA800CAA825 /* MCCatchRedPacketTests.xctest */,
+				4CAC59581DC47AA800CAA825 /* MCCatchRedPacketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CAC59361DC47AA800CAA825 /* MCCatchRedPacket */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC597E1DC47F9B00CAA825 /* img */,
+				4CAC59741DC47CBD00CAA825 /* MCcatchView */,
+				4CAC596A1DC47B9D00CAA825 /* YLGIFImage */,
+				4CAC593A1DC47AA800CAA825 /* AppDelegate.h */,
+				4CAC593B1DC47AA800CAA825 /* AppDelegate.m */,
+				4CAC593D1DC47AA800CAA825 /* ViewController.h */,
+				4CAC593E1DC47AA800CAA825 /* ViewController.m */,
+				4CAC59711DC47BD400CAA825 /* MCCatchRedPacketController.h */,
+				4CAC59721DC47BD400CAA825 /* MCCatchRedPacketController.m */,
+				4CAC59431DC47AA800CAA825 /* Assets.xcassets */,
+				4CAC59481DC47AA800CAA825 /* Info.plist */,
+				4CAC59371DC47AA800CAA825 /* Supporting Files */,
+			);
+			path = MCCatchRedPacket;
+			sourceTree = "<group>";
+		};
+		4CAC59371DC47AA800CAA825 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC59381DC47AA800CAA825 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CAC59501DC47AA800CAA825 /* MCCatchRedPacketTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC59511DC47AA800CAA825 /* MCCatchRedPacketTests.m */,
+				4CAC59531DC47AA800CAA825 /* Info.plist */,
+			);
+			path = MCCatchRedPacketTests;
+			sourceTree = "<group>";
+		};
+		4CAC595B1DC47AA800CAA825 /* MCCatchRedPacketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC595C1DC47AA800CAA825 /* MCCatchRedPacketUITests.m */,
+				4CAC595E1DC47AA800CAA825 /* Info.plist */,
+			);
+			path = MCCatchRedPacketUITests;
+			sourceTree = "<group>";
+		};
+		4CAC596A1DC47B9D00CAA825 /* YLGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC596B1DC47B9D00CAA825 /* YLGIFImage.h */,
+				4CAC596C1DC47B9D00CAA825 /* YLGIFImage.m */,
+				4CAC596D1DC47B9D00CAA825 /* YLImageView.h */,
+				4CAC596E1DC47B9D00CAA825 /* YLImageView.m */,
+			);
+			path = YLGIFImage;
+			sourceTree = "<group>";
+		};
+		4CAC59741DC47CBD00CAA825 /* MCcatchView */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC597B1DC47D4700CAA825 /* RedPacketView.h */,
+				4CAC597C1DC47D4700CAA825 /* RedPacketView.m */,
+				4CAC59751DC47CE100CAA825 /* YGGravity.h */,
+				4CAC59761DC47CE100CAA825 /* YGGravity.m */,
+				4CAC59781DC47CFD00CAA825 /* MCCatchView.h */,
+				4CAC59791DC47CFD00CAA825 /* MCCatchView.m */,
+			);
+			path = MCcatchView;
+			sourceTree = "<group>";
+		};
+		4CAC597E1DC47F9B00CAA825 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				4C7AF80C1DC4898300AFA261 /* btn_close_normal@2x.png */,
+				4CAC59891DC47FB200CAA825 /* bird.gif */,
+				4CAC597F1DC47F9B00CAA825 /* btn_catch.png */,
+				4CAC59801DC47F9B00CAA825 /* btn_catch_normal.png */,
+				4CAC59811DC47F9B00CAA825 /* ic_arrow.png */,
+				4CAC59821DC47F9B00CAA825 /* ic_circle.png */,
+				4CAC59831DC47F9B00CAA825 /* ic_circle_normal.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		4CAC598B1DC4823C00CAA825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC59981DC4826F00CAA825 /* CoreMotion.framework */,
+				4CAC59961DC4826700CAA825 /* CoreMedia.framework */,
+				4CAC59941DC4825A00CAA825 /* AssetsLibrary.framework */,
+				4CAC59921DC4825400CAA825 /* MediaPlayer.framework */,
+				4CAC59901DC4824800CAA825 /* MobileCoreServices.framework */,
+				4CAC598E1DC4824200CAA825 /* AVFoundation.framework */,
+				4CAC598C1DC4823C00CAA825 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CAC59331DC47AA800CAA825 /* MCCatchRedPacket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAC59611DC47AA800CAA825 /* Build configuration list for PBXNativeTarget "MCCatchRedPacket" */;
+			buildPhases = (
+				4CAC59301DC47AA800CAA825 /* Sources */,
+				4CAC59311DC47AA800CAA825 /* Frameworks */,
+				4CAC59321DC47AA800CAA825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCCatchRedPacket;
+			productName = MCCatchRedPacket;
+			productReference = 4CAC59341DC47AA800CAA825 /* MCCatchRedPacket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CAC594C1DC47AA800CAA825 /* MCCatchRedPacketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAC59641DC47AA800CAA825 /* Build configuration list for PBXNativeTarget "MCCatchRedPacketTests" */;
+			buildPhases = (
+				4CAC59491DC47AA800CAA825 /* Sources */,
+				4CAC594A1DC47AA800CAA825 /* Frameworks */,
+				4CAC594B1DC47AA800CAA825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CAC594F1DC47AA800CAA825 /* PBXTargetDependency */,
+			);
+			name = MCCatchRedPacketTests;
+			productName = MCCatchRedPacketTests;
+			productReference = 4CAC594D1DC47AA800CAA825 /* MCCatchRedPacketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CAC59571DC47AA800CAA825 /* MCCatchRedPacketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAC59671DC47AA800CAA825 /* Build configuration list for PBXNativeTarget "MCCatchRedPacketUITests" */;
+			buildPhases = (
+				4CAC59541DC47AA800CAA825 /* Sources */,
+				4CAC59551DC47AA800CAA825 /* Frameworks */,
+				4CAC59561DC47AA800CAA825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CAC595A1DC47AA800CAA825 /* PBXTargetDependency */,
+			);
+			name = MCCatchRedPacketUITests;
+			productName = MCCatchRedPacketUITests;
+			productReference = 4CAC59581DC47AA800CAA825 /* MCCatchRedPacketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CAC592C1DC47AA800CAA825 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MC;
+				TargetAttributes = {
+					4CAC59331DC47AA800CAA825 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9D44C6L83U;
+						ProvisioningStyle = Automatic;
+					};
+					4CAC594C1DC47AA800CAA825 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4CAC59331DC47AA800CAA825;
+					};
+					4CAC59571DC47AA800CAA825 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4CAC59331DC47AA800CAA825;
+					};
+				};
+			};
+			buildConfigurationList = 4CAC592F1DC47AA800CAA825 /* Build configuration list for PBXProject "MCCatchRedPacket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CAC592B1DC47AA800CAA825;
+			productRefGroup = 4CAC59351DC47AA800CAA825 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CAC59331DC47AA800CAA825 /* MCCatchRedPacket */,
+				4CAC594C1DC47AA800CAA825 /* MCCatchRedPacketTests */,
+				4CAC59571DC47AA800CAA825 /* MCCatchRedPacketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CAC59321DC47AA800CAA825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAC59871DC47F9B00CAA825 /* ic_circle.png in Resources */,
+				4CAC59841DC47F9B00CAA825 /* btn_catch.png in Resources */,
+				4CAC59861DC47F9B00CAA825 /* ic_arrow.png in Resources */,
+				4CAC598A1DC47FB200CAA825 /* bird.gif in Resources */,
+				4CAC59441DC47AA800CAA825 /* Assets.xcassets in Resources */,
+				4CAC599B1DC4834200CAA825 /* Default-568h@2x.png in Resources */,
+				4CAC59881DC47F9B00CAA825 /* ic_circle_normal.png in Resources */,
+				4C7AF80D1DC4898300AFA261 /* btn_close_normal@2x.png in Resources */,
+				4CAC59851DC47F9B00CAA825 /* btn_catch_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAC594B1DC47AA800CAA825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAC59561DC47AA800CAA825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CAC59301DC47AA800CAA825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAC593F1DC47AA800CAA825 /* ViewController.m in Sources */,
+				4CAC596F1DC47B9D00CAA825 /* YLGIFImage.m in Sources */,
+				4CAC59771DC47CE100CAA825 /* YGGravity.m in Sources */,
+				4CAC59701DC47B9D00CAA825 /* YLImageView.m in Sources */,
+				4CAC59731DC47BD400CAA825 /* MCCatchRedPacketController.m in Sources */,
+				4CAC593C1DC47AA800CAA825 /* AppDelegate.m in Sources */,
+				4CAC597A1DC47CFD00CAA825 /* MCCatchView.m in Sources */,
+				4CAC59391DC47AA800CAA825 /* main.m in Sources */,
+				4CAC597D1DC47D4700CAA825 /* RedPacketView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAC59491DC47AA800CAA825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAC59521DC47AA800CAA825 /* MCCatchRedPacketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAC59541DC47AA800CAA825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAC595D1DC47AA800CAA825 /* MCCatchRedPacketUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CAC594F1DC47AA800CAA825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CAC59331DC47AA800CAA825 /* MCCatchRedPacket */;
+			targetProxy = 4CAC594E1DC47AA800CAA825 /* PBXContainerItemProxy */;
+		};
+		4CAC595A1DC47AA800CAA825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CAC59331DC47AA800CAA825 /* MCCatchRedPacket */;
+			targetProxy = 4CAC59591DC47AA800CAA825 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4CAC595F1DC47AA800CAA825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CAC59601DC47AA800CAA825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CAC59621DC47AA800CAA825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9D44C6L83U;
+				INFOPLIST_FILE = MCCatchRedPacket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MC.MCCatchRedPacket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CAC59631DC47AA800CAA825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9D44C6L83U;
+				INFOPLIST_FILE = MCCatchRedPacket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MC.MCCatchRedPacket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4CAC59651DC47AA800CAA825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MCCatchRedPacketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MC.MCCatchRedPacketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCCatchRedPacket.app/MCCatchRedPacket";
+			};
+			name = Debug;
+		};
+		4CAC59661DC47AA800CAA825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MCCatchRedPacketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MC.MCCatchRedPacketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCCatchRedPacket.app/MCCatchRedPacket";
+			};
+			name = Release;
+		};
+		4CAC59681DC47AA800CAA825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MCCatchRedPacketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MC.MCCatchRedPacketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MCCatchRedPacket;
+			};
+			name = Debug;
+		};
+		4CAC59691DC47AA800CAA825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MCCatchRedPacketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MC.MCCatchRedPacketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MCCatchRedPacket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CAC592F1DC47AA800CAA825 /* Build configuration list for PBXProject "MCCatchRedPacket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAC595F1DC47AA800CAA825 /* Debug */,
+				4CAC59601DC47AA800CAA825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAC59611DC47AA800CAA825 /* Build configuration list for PBXNativeTarget "MCCatchRedPacket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAC59621DC47AA800CAA825 /* Debug */,
+				4CAC59631DC47AA800CAA825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAC59641DC47AA800CAA825 /* Build configuration list for PBXNativeTarget "MCCatchRedPacketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAC59651DC47AA800CAA825 /* Debug */,
+				4CAC59661DC47AA800CAA825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAC59671DC47AA800CAA825 /* Build configuration list for PBXNativeTarget "MCCatchRedPacketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAC59681DC47AA800CAA825 /* Debug */,
+				4CAC59691DC47AA800CAA825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CAC592C1DC47AA800CAA825 /* Project object */;
+}
