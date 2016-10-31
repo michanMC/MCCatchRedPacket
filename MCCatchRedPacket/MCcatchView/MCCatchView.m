@@ -8,6 +8,8 @@
 
 #import "MCCatchView.h"
 #import "YGGravity.h"
+#define   KRedPacket_w  90
+#define   KRedPacket_h  ((90*515)/607)
 
 #define SPEED 50
 @interface MCCatchView (){
@@ -41,10 +43,10 @@
     CGRect myRect = self.frame;
     //背景
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:0];
-    CGFloat w = self.frame.size.width - 145;
+    CGFloat w = self.frame.size.width - 170;
 
     //镂空
-    UIBezierPath *circlePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(70, (self.frame.size.height - w)/2-100, w, w)];
+    UIBezierPath *circlePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(85, (self.frame.size.height - w)/2-100, w, w)];
     
     [path appendPath:circlePath];
     [path setUsesEvenOddFillRule:YES];
@@ -80,8 +82,7 @@
     _catchView = [[UIImageView alloc]initWithFrame:CGRectMake(x, y, w, h)];
     _catchView.image = [UIImage imageNamed:@"ic_circle_normal"];
     
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(actionRedPacket_catchViewTap:)];
-    //    [_catchView addGestureRecognizer:tap];
+//        [self addGestureRecognizer:tap];
     _catchView.userInteractionEnabled = YES;
     
     [self addSubview:_catchView];
@@ -99,22 +100,24 @@
     [self addSubview:_catchBtn];
     
     
-//    CGFloat w2 = 320/3-20;
+//    CGFloat w2 = 320/3-80;
 //    CGFloat x2 = (self.frame.size.width-w2)/2;
 //
 //    CGFloat h2 = w2;
-//    CGFloat y2 = (self.frame.size.height - h2)/2-h2-10;
+//    CGFloat y2 = (self.frame.size.height - h2)/2-h2-75;
 //    UIView * view2 = [[UIView alloc]initWithFrame:CGRectMake(x2, y2, w2, h2)];
 //    view2.backgroundColor = [UIColor redColor];
-//    //    [self addSubview:view2];
+//        [self addSubview:view2];
     
-    UIImageView * ic_arrowImgVie = [[UIImageView alloc]initWithFrame:CGRectMake(_catchView.frame.origin.x - 40/2, _catchView.frame.origin.y - 40/2, _catchView.frame.size.width + 40, _catchView.frame.size.height + 40)];
+    UIImageView * ic_arrowImgVie = [[UIImageView alloc]initWithFrame:CGRectMake(_catchView.frame.origin.x - 10/2, _catchView.frame.origin.y - 10/2, _catchView.frame.size.width + 10, _catchView.frame.size.height + 10)];
     
     ic_arrowImgVie.image = [UIImage imageNamed:@"ic_arrow"];
-    
+    ic_arrowImgVie.userInteractionEnabled = YES;
     [self addSubview:ic_arrowImgVie];
     
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(actionRedPacket_catchViewTap:)];
 
+    [ic_arrowImgVie addGestureRecognizer:tap];
     
     
 }
@@ -129,8 +132,12 @@
     
 }
 -(void)prepareData:(NSArray*)array{
+    //607*515
     CGFloat RedPacket_w = 100;
     CGFloat RedPacket_h = 100;
+     RedPacket_w = 90*515/607;
+     RedPacket_h = 90*515/607;
+    
     
     CGFloat maxx = self.frame.size.width * 3 -RedPacket_w;
     
@@ -141,14 +148,14 @@
         
         CGFloat randomy = arc4random() % ((NSInteger)maxy);
         
-        RedPacketView* RedPacket =[[RedPacketView alloc]initWithFrame:CGRectMake(randomx, randomy, RedPacket_w, RedPacket_h)];
+        RedPacketView* RedPacket =[[RedPacketView alloc]initWithFrame:CGRectMake(randomx, randomy, KRedPacket_w, KRedPacket_h)];
 
         RedPacket.image = [YLGIFImage imageNamed:@"bird.gif"];
-        //        RedPacket.backgroundColor = [UIColor blueColor];
+//               RedPacket.backgroundColor = [UIColor blueColor];
         RedPacket.tag = 900+i;
         
-        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(actionRedPacketTap:)];
-        [RedPacket addGestureRecognizer:tap];
+//        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(actionRedPacketTap:)];
+//        [RedPacket addGestureRecognizer:tap];
         RedPacket.userInteractionEnabled = YES;
         
         [_flightView addSubview:RedPacket];
@@ -174,7 +181,7 @@
             _catchBtn.selected = YES;
             _catchView.image = [UIImage imageNamed:@"ic_circle"];
             
-            NSLog(@"进来了");
+//            NSLog(@"进来了");
             [UIView animateWithDuration:.1 animations:^{
                 
                 _catchView.transform= CGAffineTransformScale(_catchView.transform, .98, .98);
@@ -194,7 +201,7 @@
         }
         else
         {
-            NSLog(@"出去了");
+//            NSLog(@"出去了");
             _catchView.image = [UIImage imageNamed:@"ic_circle_normal"];
             _catchView.transform = CGAffineTransformIdentity;
             
@@ -209,8 +216,8 @@
 
 
 -(void)RedPacketFiy2:(RedPacketView*)RedPacket{
-    CGFloat RedPacket_w = 100;
-    CGFloat RedPacket_h = 100;
+    CGFloat RedPacket_w = KRedPacket_w;
+    CGFloat RedPacket_h = KRedPacket_h;
     
     CGFloat maxx = self.frame.size.width * 3  -RedPacket_w;
     
@@ -279,35 +286,70 @@
     
     
 }
--(void)actionRedPacketTap:(UITapGestureRecognizer*)tap{
-    RedPacketView * RedPacket = [self viewWithTag:tap.view.tag];
-    NSLog(@"RedPacket.tag ==%ld",RedPacket.tag);
+-(void)actionRedPacket_catchViewTap:(UITapGestureRecognizer*)tap{
+//    RedPacketView * RedPacket = [self viewWithTag:tap.view.tag];
+//    NSLog(@"RedPacket.tag ==%ld",RedPacket.tag);
+    
+//    UITouch *touch = [touches anyObject];
+//    
+//    CGPoint touchPoint = [touch locationInView:self];
+    CGPoint point = [tap locationInView:self];
+    NSLog(@"handleSingleTap!pointx:%f,y:%f",point.x,point.y);
+    
+        for (NSInteger i = 0; i < 4; i++) {
+            RedPacketView * view1 = [self viewWithTag:900+i];
+            CGRect rect = [[view1.layer presentationLayer ]frame];  // view指你的动画中移动的view
+    
+    
+            if( CGRectIntersectsRect(rect, catchRect))
+            {
+                NSLog(@"进来了");
+                [self actionCatchBtn];
+                
+                
+//                if( CGRectIntersectsRect(rect, CGRectMake(point.x+self.frame.size.width, point.y, 30, 30)))
+//                {
+//                    NSLog(@"捉到了");
+//    
+//                    }
+                break;
+    
+            }
+            else
+            {
+    
+    
+            }
+    
+    
+        }
+    
     
     
     
 }
--(id)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    NSArray *subViews = self.subviews;
-    
-    for(UIView *subView in subViews){
-        
-        if([subView isKindOfClass:[RedPacketView class]]){ //是要找的图片
-            CALayer *layer = subView.layer.presentationLayer; //图片的显示层
-            if(CGRectContainsPoint(layer.frame, point)){ //触摸点在显示层中，返回当前图片
-                return subView;
-            }
-        }
-        if([subView isKindOfClass:[UIImageView class]]){ //是要找的图片
-            CALayer *layer = subView.layer.presentationLayer; //图片的显示层
-            if(CGRectContainsPoint(layer.frame, point)){ //触摸点在显示层中，返回当前图片
-                return subView;
-            }
-        }
-        
-    }
-    return [super hitTest:point withEvent:event];
-}
+//-(id)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+//{
+//    NSArray *subViews = self.subviews;
+//    
+//    for(UIView *subView in subViews){
+//        
+//        if([subView isKindOfClass:[RedPacketView class]]){ //是要找的图片
+//            CALayer *layer = subView.layer.presentationLayer; //图片的显示层
+//            if(CGRectContainsPoint(layer.frame, point)){ //触摸点在显示层中，返回当前图片
+//                return subView;
+//            }
+//        }
+//        if([subView isKindOfClass:[UIImageView class]]){ //是要找的图片
+//            CALayer *layer = subView.layer.presentationLayer; //图片的显示层
+//            if(CGRectContainsPoint(layer.frame, point)){ //触摸点在显示层中，返回当前图片
+//                return subView;
+//            }
+//        }
+//        
+//    }
+//    return [super hitTest:point withEvent:event];
+//}
 -(void)startAnimate
 {
     float scrollSpeed = (_myImageView.frame.size.width - self.frame.size.width)/2/SPEED;
@@ -370,14 +412,14 @@
             //            NSLog(@"y=======%.2f",_myImageView.frame.origin.y);
             
         } completion:nil];
-        CGFloat w2 = 320/3 - 20;
+        CGFloat w2 = 320/3 - 80;
         CGFloat x2 = (self.frame.size.width-w2)/2;
         //self.frame.size.width - 100-100;
         CGFloat h2 = w2;
-        CGFloat y2 = (self.frame.size.height - h2)/2-h2-10;
+        CGFloat y2 = (self.frame.size.height - h2)/2-h2-75;
         
         
-        NSLog(@"x=======%.2f",_myImageView.frame.origin.x);
+//        NSLog(@"x=======%.2f",_myImageView.frame.origin.x);
         
         CGFloat x3 = 0- _myImageView.frame.origin.x+x2;
         CGFloat y3 = 0- _myImageView.frame.origin.y+y2;
