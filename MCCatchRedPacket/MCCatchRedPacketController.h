@@ -14,6 +14,4 @@
 
 @property(nonatomic,weak)id<MCCatchViewDelegate>delegate;
 
-
-
 @end
